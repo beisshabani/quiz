@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #282828;
+    background-color: rgb(0, 230, 200);
+}
+main.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+main.container > nav.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background-image: linear-gradient(250deg, rgba(0, 100, 150, 0.8), rgba(0, 0, 0, 0.3));
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(50, 135, 233, 1), inset 0 0 100px rgb(0, 59, 100);
+}
+
+main.container > nav.content > section.question {
+text-align: center;
+width: 100%;
+padding: 30px;
+}
+.unclickable {
+    pointer-events: none;
+}
+main.container > nav.content > section.answers{
+    display: flex;
+    flex-basis: 1;
+    flex-wrap: wrap;
+    flex-grow: 2;   
+
+}
+
+main.container > nav.content > section.answers > div.answer {
+    flex-basis: 49%;
+    line-height: 10vh;
+    padding-left: 1em;
+    border-radius: 50px;
+    margin: 3px;
+    background: rgb(0, 89, 255, 0.3);
+    transition: background ease-in-out .4s;
+}
+@media screen and (max-width: 900px) {
+    main.container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    main.container > nav.content > section.answers {
+        display: flex;
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+ 
+    }
+    main.container > nav.content > section.answers > div.answer {
+        flex-basis: 100%;
+        flex-grow: 0;
+        text-align: center;
+    }
+}
+
+main.container > nav.content > section.answers > div.answer:hover{
+    background:rgb(0, 30, 55);
+    color: #ffffff;
+    cursor: pointer;
+}
+main.container > nav.content > section.info {
+    width: 100%;
+    display: flex;
+}
+
+main.container > nav.content > section.info > div {
+    flex-basis: 50%;
+    padding: 3em;
+}
+main.container > nav.content > section.info > div:last-child {
+    float: right;
+    text-align: right;
+
+}
+main.container > nav.content > div.start-screen {
+display: flex;
+text-align: center;
+flex-basis: 100%;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+main.container > nav.content > div.start-screen > div {
+flex-basis: 100%;
+margin: 30px;
+color: white;
+font-size: 2em;
+text-shadow: 0 0 5px black;
+}
+
+.start-button {
+    background: transparent;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 1), -4px -4px 30px rgb(255, 255, 255);
+    border: 0;
+    outline: 0;
+    padding: 2em;
+    border-radius: 3em;
+    color: white;
+    transition: box-shadow ease-out 200ms;
+}
+
+.start-button:hover {
+    background: transparent;
+    box-shadow: -4px -4px 30px rgba(0, 0, 0, 1), 4px 4px 30px rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    outline: 0;
+    padding: 2em;
+    border-radius: 3em;
+}

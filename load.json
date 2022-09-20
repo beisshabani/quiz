@@ -1,0 +1,39 @@
+{
+    "data": [ {
+         "question": "What was the period of world war II ?",
+         "answers": [
+                     "July 28, 1914 - November 11, 1918",
+                     "September 11, 1910 - December, 12, 1920", 
+                     "January 1, 1945 - June 13, 1950", 
+                     "July 11, 1913 - November 10, 1918"
+                 ],
+         "correctAnswer": "July 28, 1914 - November 11, 1918"
+     },
+     {
+         "question": "What is psychokinesis?",
+         "answers": [
+                     "The ability to solve complex problems", 
+                     "The power to move object by physical strength", 
+                     "The ability to control the time", 
+                     "The supposed ability to move objects by mental effort"
+                 ],
+         "correctAnswer": "The supposed ability to move objects by mental effort"
+     }, 
+     {
+         "question": "Which of the answers is the correct answer of ADHD disorder?",
+         "answers": [
+                      "Attention deficit hyperactive disorder", 
+                      "Attention difficulty high disorder", 
+                      "Attention deficit hyperactivity disorder", 
+                      "Aletrnate deilusional hyperthymesia disdain"
+                 ],
+         "correctAnswer": "Attention deficit hyperactivity disorder"
+     },
+     {
+         "question": "If all slopes are blops and blops are lazzies then defenitely all slopes are lazzies",
+         "answers": ["True", "False", "Neither is true", "Slopes are blops but lazzies aren't slopes!"],
+         "correctAnswer": "True"
+     }
+ 
+ ]
+ }
